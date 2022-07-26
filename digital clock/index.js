@@ -11,14 +11,17 @@ let night = "AM"
 
 if(hours>12){
     hours = hours - 12;
-    night = "PM"
+    
  }
+    
+ if (hours = 12){
+     night = "AM"
 
- if(hours<10){
+ if(hours < 10){
     hours = "0" + hours;
  }
 
- if(minutes>1){
+ if(minutes< 10){
     minutes = "0" + minutes
  };
 
