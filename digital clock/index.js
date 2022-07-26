@@ -18,7 +18,7 @@ if(hours>12){
     hours = "0" + hours;
  }
 
- if(minutes<1){
+ if(minutes>1){
     minutes = "0" + minutes
  };
 
