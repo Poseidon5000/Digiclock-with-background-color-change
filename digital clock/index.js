@@ -15,7 +15,7 @@ if(hours>12){
  }
     
  if (hours = 12){
-     night = "AM"
+     night = "PM"
 
  if(hours < 10){
     hours = "0" + hours;
