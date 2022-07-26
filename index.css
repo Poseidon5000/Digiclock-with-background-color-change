@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    ;
+}
+
+body
+
+
+html,body{
+    display: grid;
+    height: 100vh;
+    place-content: center;
+    border: 2px solid black;
+    background-color: black;
+    
+  
+}
+
+.hero{
+    height: 100px;
+    width: 330px;
+    background: linear-gradient(135deg, #14ffe9, rgb(57, 57, 154), white);
+    border-radius: 10px;
+    cursor: default;
+    animation: animate 1.5s linear infinite;
+}
+
+.hero .display, .hero span{
+position: absolute;
+    top: 50.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.hero .display{
+    background: #1b1b1b;
+    height:85px ;
+    width: 310px;
+    text-align: center;
+    z-index: 1000;
+    border-radius: 6px;
+}
+
+#timer{
+    line-height: 85px;
+    font-size: 50px;
+    color: white;
+    letter-spacing: 2px; 
+    background:linear-gradient(135deg, #649691, rgb(57, 57, 154), white);
+     -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent; 
+    animation: animate 1.5s linear infinite;
+}  
+
+@keyframes animate {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+
+}
+
+.hero span {
+    height: 100%;
+    width:100%;
+    background:inherit;
+    border-radius: 10px;
+}
+.hero span:first-child{
+    filter: blur(10px);
+}
+
+.hero span:last-child{
+    filter: blur(20px);
+}
